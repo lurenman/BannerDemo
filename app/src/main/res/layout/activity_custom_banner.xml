@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:paddingBottom="40dp"
+    android:clipToPadding="false"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="banner自定义样式展示"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:indicator_drawable_selected="@drawable/selected_radius"
+            app:indicator_drawable_unselected="@drawable/unselected_radius"
+            app:indicator_height="8dp"
+            app:indicator_margin="4dp"
+            app:indicator_width="8dp" />
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:indicator_drawable_selected="@color/colorPrimary"
+            app:indicator_drawable_unselected="@android:color/white"
+            app:indicator_height="4dp"
+            app:indicator_margin="4dp"
+            app:indicator_width="20dp" />
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:title_background="#555CB85C"
+            app:title_height="30dp"
+            app:title_textcolor="@android:color/white"
+            app:title_textsize="10sp" />
+    </LinearLayout>
+</ScrollView>
